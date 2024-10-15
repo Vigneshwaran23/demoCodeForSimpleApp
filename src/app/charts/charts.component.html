@@ -1,0 +1,15 @@
+<div class="container mx-auto mt-10">
+    <h1 class="text-3xl font-bold mb-6">IBM Income Statement</h1>
+  
+    <div *ngFor="let report of incomeData">
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-4">
+        <h2 class="text-2xl font-bold mb-2">Fiscal Year Ending: {{ report.fiscalDateEnding }}</h2>
+        <p class="mb-2 text-gray-600"><strong>Total Revenue:</strong> ${{ report.totalRevenue | number }}</p>
+        <p class="mb-2 text-gray-600"><strong>Gross Profit:</strong> ${{ report.grossProfit | number }}</p>
+        <p class="mb-2 text-gray-600"><strong>Operating Income:</strong> ${{ report.operatingIncome | number }}</p>
+        <p class="mb-2 text-gray-600"><strong>Net Income:</strong> ${{ report.netIncome | number }}</p>
+        <p class="mb-2 text-gray-600"><strong>Cost of Revenue:</strong> ${{ report.costOfRevenue | number }}</p>
+      </div>
+    </div>
+  </div>
+  
